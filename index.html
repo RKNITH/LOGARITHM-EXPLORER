@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logarithm Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Logarithm Explorer</h1>
+    </header>
+
+    <main>
+        <section id="history">
+            <h2>History of Logarithms</h2>
+            <p>Logarithms were introduced by John Napier in the early 17th century as a means to simplify calculations.
+                The concept was further developed by Henry Briggs, who established the common logarithm (base 10) and
+                refined the logarithmic tables.</p>
+            <p>In the 18th century, the Swiss mathematician Leonhard Euler made significant contributions to the theory
+                of logarithms and their applications, particularly in the context of complex numbers and exponential
+                functions.</p>
+        </section>
+
+        <section id="theory">
+            <h2>Theory of Logarithms</h2>
+            <p>A logarithm is the exponent to which a base must be raised to produce a given number. In other words, for
+                a base <em>b</em> and a number <em>x</em>, the logarithm of <em>x</em> with base <em>b</em> is the
+                number
+                <em>y</em> such that <em>b<sup>y</sup> = x</em>.
+            </p>
+            <p>The logarithm of a product is the sum of the logarithms of the factors:
+                <em>log<sub>b</sub>(xy) = log<sub>b</sub>(x) + log<sub>b</sub>(y)</em>.
+            </p>
+            <p>The logarithm of a quotient is the difference of the logarithms:
+                <em>log<sub>b</sub>(x/y) = log<sub>b</sub>(x) - log<sub>b</sub>(y)</em>.
+            </p>
+            <p>The logarithm of a power is the exponent times the logarithm of the base:
+                <em>log<sub>b</sub>(x<sup>y</sup>) = y * log<sub>b</sub>(x)</em>.
+            </p>
+            <p>The logarithm of 1 is always 0: <em>log<sub>b</sub>(1) = 0</em>.</p>
+            <p>The logarithm of the base itself is always 1: <em>log<sub>b</sub>(b) = 1</em>.</p>
+            <p>To change the base of a logarithm: <em>log<sub>b</sub>(x) = log<sub>k</sub>(x) / log<sub>k</sub>(b)</em>.
+            </p>
+        </section>
+
+        <section id="applications">
+            <h2>Applications in Mathematics</h2>
+            <p>Logarithms are used extensively in various fields of mathematics and science. They are essential in
+                solving
+                equations involving exponential growth or decay, such as population growth, radioactive decay, and
+                interest calculations.</p>
+            <p>In calculus, logarithms are used to integrate functions involving exponential terms. They also play a
+                crucial role in the analysis of algorithms, particularly in computer science, where they help to
+                determine the complexity of algorithms and data structures.</p>
+        </section>
+
+        <section id="research">
+            <h2>Research and Developments</h2>
+            <p>Recent research in logarithms has focused on improving computational methods and finding more efficient
+                algorithms for calculating logarithmic values. Researchers are also exploring the use of logarithms in
+                cryptographic systems and other advanced applications in computer science and engineering.</p>
+        </section>
+
+        <section id="formulas">
+            <h2>Formulas</h2>
+            <ul>
+                <li><em>log<sub>b</sub>(xy) = log<sub>b</sub>(x) + log<sub>b</sub>(y)</em></li>
+                <li><em>log<sub>b</sub>(x/y) = log<sub>b</sub>(x) - log<sub>b</sub>(y)</em></li>
+                <li><em>log<sub>b</sub>(x<sup>y</sup>) = y * log<sub>b</sub>(x)</em></li>
+                <li><em>log<sub>b</sub>(1) = 0</em></li>
+                <li><em>log<sub>b</sub>(b) = 1</em></li>
+                <li><em>log<sub>b</sub>(x) = log<sub>k</sub>(x) / log<sub>k</sub>(b)</em> (Change of base formula)</li>
+            </ul>
+        </section>
+
+        <section id="calculator">
+            <h2>Logarithm Calculator</h2>
+            <label for="number">Number:</label>
+            <input type="number" id="number" placeholder="Enter a number">
+
+            <label for="base">Base:</label>
+            <input type="number" id="base" placeholder="Enter the base">
+
+            <button onclick="calculateLog()">Calculate Logarithm</button>
+
+            <p id="result"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Logarithm Explorer</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
